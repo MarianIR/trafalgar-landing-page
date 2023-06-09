@@ -1,0 +1,43 @@
+@import "mixins";
+
+.download-app-section {
+  margin: 10rem auto;
+  @media (min-width: 969px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .app-illustration {
+    @include Illustration;
+  }
+  .download-app-article {
+    padding: 3rem 0;
+    @media (min-width: 969px) {
+      margin-right: 2rem;
+    }
+    .download-app-heading {
+      @include SecondHeader;
+    }
+    .horizontal-line {
+      @include HorizontalLine;
+    }
+    .paragraph {
+      @include Paragraph;
+      max-width: 50rem;
+    }
+    .download-btn {
+      @include LearnMoreBtn;
+      .download-arrow {
+        margin-left: 1rem;
+        width: 1.5rem;
+        transform: rotate(90deg);
+      }
+      &:hover {
+        .download-arrow {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}

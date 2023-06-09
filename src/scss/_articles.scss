@@ -1,0 +1,85 @@
+@import "mixins";
+
+.articles-section {
+  padding: 5rem 0;
+  background-image: url("/src/images/element (2).png"),
+    url("/src/images/element (3).png");
+  background-repeat: no-repeat;
+  background-position: center right, 8rem 13rem;
+  .articles-heading {
+    @include SecondHeader;
+    @media (min-width: 969px) {
+      text-align: center;
+    }
+  }
+  .horizontal-line {
+    @include HorizontalLine;
+    @media (min-width: 969px) {
+      margin: 2rem auto;
+    }
+  }
+  .article-container {
+    @media (min-width: 969px) {
+      display: grid;
+      justify-content: space-evenly;
+      gap: 2rem;
+      grid-template-columns: auto auto;
+    }
+    @media (min-width: 1368px) {
+      display: grid;
+      justify-content: center;
+      gap: 10rem;
+      grid-template-columns: auto auto auto;
+    }
+    .article-box {
+      background-color: #fff;
+      max-width: 35rem;
+      margin: 3rem auto;
+      box-shadow: 0px 0px 8px -5px #000000;
+      border-radius: 2rem;
+      .article-illustration {
+        width: 100%;
+        max-width: 35rem;
+        height: auto;
+      }
+      .article-title {
+        font-size: 2.1rem;
+        color: #000;
+        padding: 1rem 0;
+        max-width: 25rem;
+        margin: 0 auto;
+      }
+      .article-content {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: #7d7987;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        max-width: 25rem;
+        margin: 0 auto;
+      }
+      .read-more {
+        margin: 0 auto;
+        font-size: 1.7rem;
+        color: #4089ed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 3rem 0;
+        cursor: pointer;
+        .right-arrow {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+  .view-all-btn {
+    @include LearnMoreBtn;
+    width: 20rem;
+    @media (min-width: 969px) {
+      margin: 0 auto;
+    }
+  }
+}

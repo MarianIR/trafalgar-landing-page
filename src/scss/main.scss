@@ -1,0 +1,15 @@
+@import "navigation", "reset", "hero", "services", "mixins",
+  "healthcareProviders", "downloadApp", "customerTestimonial", "articles",
+  "footer";
+
+body {
+  background-color: #fdfdfd;
+  padding: 1rem;
+  background-image: url("/src/images/element\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 7rem 10rem;
+  background-position: 0 15rem;
+  overflow-x: hidden;
+  .footer-section {
+  }
+}

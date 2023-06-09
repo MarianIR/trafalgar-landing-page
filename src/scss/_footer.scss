@@ -1,0 +1,75 @@
+@import "mixins";
+body {
+  .footer-section {
+    background: linear-gradient(#5b9bf3, #67c3f3, #97c3f9);
+    margin: 0 -1rem -1rem -1rem;
+
+    @media (min-width: 1026px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 43rem;
+    }
+    .footer-article {
+      padding: 1rem;
+      .page-logo {
+        filter: brightness(0) invert(1);
+        @media (min-width: 969px) {
+          margin: 2rem 0;
+        }
+      }
+      .paragraph,
+      .copyrights {
+        @include Paragraph;
+        text-align: left;
+        color: #fff;
+        max-width: 39.1rem;
+      }
+      @media (min-width: 969px) {
+        margin: 2rem 0;
+      }
+      .copyrights {
+      }
+    }
+    .informations-container {
+      @media (min-width: 380px) {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto auto;
+      }
+      @media (min-width: 600px) {
+        grid-template-columns: auto auto auto;
+      }
+      @media (min-width: 1026px) {
+        width: 50%;
+        max-width: 100rem;
+      }
+      .company,
+      .region,
+      .help {
+        padding: 1rem;
+        .title {
+          margin: 2rem 0;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #fff;
+        }
+        .elements-list {
+          .list-content {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #fff;
+            margin: 1rem 0;
+            list-style: none;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

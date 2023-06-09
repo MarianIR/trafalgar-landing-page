@@ -1,0 +1,89 @@
+@import "mixins";
+
+.testimonials-section {
+  background: linear-gradient(45deg, #5b9bf3, #458ff6);
+  margin: 0 auto;
+  max-width: 90%;
+  @media (min-width: 969px) {
+    max-width: 75%;
+  }
+  border-radius: 1rem;
+  .testimonial-heading {
+    @include SecondHeader;
+    color: #fff;
+    padding: 3rem;
+    @media (min-width: 969px) {
+      text-align: center;
+    }
+  }
+  .horizontal-line {
+    @include HorizontalLine;
+    background-color: #fff;
+    @media (min-width: 969px) {
+      margin: 0 auto;
+    }
+  }
+  .testimonial {
+    @media (min-width: 969px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 4rem 0;
+    }
+    .person {
+      @media (min-width: 969px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 25%;
+      }
+      .portret {
+        max-width: 15rem;
+        height: auto;
+        border-radius: 50%;
+        border: 0.5rem solid #fff;
+        margin: 2rem auto;
+        display: block;
+      }
+      .person-info {
+        text-align: center;
+        @media (min-width: 969px) {
+          text-align: left;
+        }
+        .name {
+          font-size: 2.2rem;
+          color: #fff;
+        }
+        .profession {
+          font-size: 1.8rem;
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+    .paragraph {
+      @include Paragraph;
+      color: #fff;
+      max-width: 42rem;
+      padding: 1rem;
+      text-align: center;
+      @media (min-width: 969px) {
+        margin: 0;
+      }
+    }
+  }
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3rem auto;
+  width: 50%;
+  max-width: 20rem;
+  .left-arrow,
+  .right-arrow {
+    cursor: pointer;
+  }
+}

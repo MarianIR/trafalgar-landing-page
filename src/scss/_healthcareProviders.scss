@@ -1,0 +1,36 @@
+@import "mixins";
+
+.healtcare-section {
+  margin: 10rem auto;
+  background-image: url("/src/images/element (1).png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  @media (min-width: 969px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .healtcare-illustration {
+    @include Illustration;
+  }
+  .healtcare-article {
+    padding: 3rem 0;
+    @media (min-width: 969px) {
+      margin-left: 2rem;
+    }
+    .healtcare-heading {
+      @include SecondHeader;
+    }
+    .horizontal-line {
+      @include HorizontalLine;
+    }
+    .paragraph {
+      @include Paragraph;
+      max-width: 50rem;
+    }
+    .learn-more {
+      @include LearnMoreBtn;
+    }
+  }
+}
