@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <header className="page-header">
       <img
-        src="../src/images/logo.png"
+        src={"../src/images/logo.png"}
         alt="This is page's logo"
         className="page-logo"
       />
