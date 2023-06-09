@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,20 +23,20 @@ const Navbar = () => {
   return (
     <header className="page-header">
       <img
-        src="../src/images/logo.png"
+        src="/src/images/logo.png"
         alt="This is page's logo"
         className="page-logo"
       />
       <button className="menu-btn" onClick={toggleMenu}>
         {isOpen ? (
           <img
-            src="../src/images/icon-hamburger.svg"
+            src="/src/images/icon-hamburger.svg"
             alt="Open menu button"
             className="open-menu"
           />
         ) : (
           <img
-            src="./src/images/icon-close.svg"
+            src="/src/images/icon-close.svg"
             alt="Close menu button"
             className="close-menu"
           />
