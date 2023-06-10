@@ -4,8 +4,8 @@ const Hero = () => {
       <article className="hero-article">
         <h1 className="hero-heading">Virtual healthcare for you</h1>
         <p className="paragraph">
-          {/* Trafalgar provides progressive, and affordable healthcare, accessible
-          on mobile and online for everyone */}
+          Trafalgar provides progressive, and affordable healthcare, accessible
+          on mobile and online for everyone
         </p>
         <button className="consult-btn">Consult today</button>
       </article>
