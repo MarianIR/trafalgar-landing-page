@@ -5,7 +5,7 @@ import pexelsThree from "/src/images/pexels-pixabay-415829.jpg";
 const testimonials = [
   {
     id: 1,
-    portret: { groupTwo },
+    portret: groupTwo,
     name: "Edward Newgate",
     profession: "Founder Circle",
     review:
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     id: 2,
-    portret: { pexelsOne },
+    portret: pexelsOne,
     name: "John Doe",
     profession: "Web Developer",
     review:
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    portret: { pexelsTwo },
+    portret: pexelsTwo,
     name: "Wane Doe",
     profession: "Maketing Specialist",
     review:
@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     id: 4,
-    portret: { pexelsThree },
+    portret: pexelsThree,
     name: "Mark Smith",
     profession: "Designer",
     review:
