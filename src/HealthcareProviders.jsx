@@ -1,8 +1,9 @@
+import healcareIllustration from "/src/images/trafalgar-illustration sec02 1.png";
 const HealthCare = () => {
   return (
     <section className="healtcare-section">
       <img
-        src="/src/images/trafalgar-illustration sec02 1.png"
+        src={healcareIllustration}
         alt="This is healtcare section's illustration"
         className="healtcare-illustration"
       />
@@ -11,7 +12,7 @@ const HealthCare = () => {
         <hr className="horizontal-line" />
         <p className="paragraph">
           Trafalgar provides progressive, and affordable healthcare, accessible
-          on mobile and online for everyone. To us, it’s not just work. We take
+          on mobile and online for everyone. To us, it's not just work. We take
           pride in the solutions we deliver
         </p>
         <button className="learn-more">Learn More</button>

@@ -1,8 +1,10 @@
+import appIllustration from "/src/images/trafalgar-illustration sec03 1.png";
+import downloadArrow from "/src/images/Frame (6).png";
 const DownloadApp = () => {
   return (
     <section className="download-app-section">
       <img
-        src="/src/images/trafalgar-illustration sec03 1.png"
+        src={appIllustration}
         alt="This is healtcare section's illustration"
         className="app-illustration"
       />
@@ -17,7 +19,7 @@ const DownloadApp = () => {
         <button className="download-btn">
           Download
           <img
-            src="/src/images/Frame (6).png"
+            src={downloadArrow}
             alt="Download button arrow"
             className="download-arrow"
           />

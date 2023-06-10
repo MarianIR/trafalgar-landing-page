@@ -1,12 +1,10 @@
+import logo from "/src/images/logo.png";
+
 const Footer = () => {
   return (
     <section className="footer-section">
       <article className="footer-article">
-        <img
-          src="/src/images/logo.png"
-          alt="This is page's logo"
-          className="page-logo"
-        />
+        <img src={logo} alt="This is page's logo" className="page-logo" />
         <p className="paragraph">
           Trafalgar provides progressive, and affordable healthcare, accessible
           on mobile and online for everyone

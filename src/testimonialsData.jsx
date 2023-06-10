@@ -1,7 +1,11 @@
+import groupTwo from "/src/images/Group 5.png";
+import pexelsOne from "/src/images/pexels-pixabay-157661.jpg";
+import pexelsTwo from "/src/images/pexels-pixabay-220453.jpg";
+import pexelsThree from "/src/images/pexels-pixabay-415829.jpg";
 const testimonials = [
   {
     id: 1,
-    portret: "/src/images/Group 5.png",
+    portret: { groupTwo },
     name: "Edward Newgate",
     profession: "Founder Circle",
     review:
@@ -9,7 +13,7 @@ const testimonials = [
   },
   {
     id: 2,
-    portret: "/src/images/pexels-pixabay-157661.jpg",
+    portret: { pexelsOne },
     name: "John Doe",
     profession: "Web Developer",
     review:
@@ -17,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    portret: "/src/images/pexels-pixabay-220453.jpg",
+    portret: { pexelsTwo },
     name: "Wane Doe",
     profession: "Maketing Specialist",
     review:
@@ -25,7 +29,7 @@ const testimonials = [
   },
   {
     id: 4,
-    portret: "/src/images/pexels-pixabay-415829.jpg",
+    portret: { pexelsThree },
     name: "Mark Smith",
     profession: "Designer",
     review:
