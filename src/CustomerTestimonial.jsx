@@ -1,6 +1,7 @@
 import { useState } from "react";
 import testimonials from "./testimonialsData";
-
+import arrowRight from "/src/images/Frame (6).png";
+import arrowLeft from "/src/images/Frame (7).png";
 const CustomerTestimonials = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
@@ -51,13 +52,13 @@ const CustomerTestimonials = () => {
       </section>
       <div className="arrows">
         <img
-          src="/src/images/Frame (7).png"
+          src={arrowLeft}
           alt="left arrow"
           className="left-arrow"
           onClick={handlePrevClick}
         />
         <img
-          src="/src/images/Frame (6).png"
+          src={arrowRight}
           alt="right arrow"
           className="right-arrow"
           onClick={handleNextClick}

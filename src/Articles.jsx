@@ -1,4 +1,5 @@
 import articlesData from "./articlesData";
+import arrowRight from "/src/images/Frame (6).png";
 const Articles = () => {
   return (
     <section className="articles-section">
@@ -16,11 +17,7 @@ const Articles = () => {
             <p className="article-content">{data.content}</p>
             <div className="read-more">
               Read more
-              <img
-                src="../src/images/Frame (6).png"
-                alt="right arrow"
-                className="right-arrow"
-              />
+              <img src={arrowRight} alt="right arrow" className="right-arrow" />
             </div>
           </div>
         ))}
