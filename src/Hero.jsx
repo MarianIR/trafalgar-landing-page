@@ -1,3 +1,5 @@
+import heroIllustration from "/src/images/trafalgar-header illustration 1.png";
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -10,7 +12,7 @@ const Hero = () => {
         <button className="consult-btn">Consult today</button>
       </article>
       <img
-        src="/src/images/trafalgar-header illustration 1.png"
+        src={heroIllustration}
         alt="hero illustration"
         className="hero-illustration"
       />
