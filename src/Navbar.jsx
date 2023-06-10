@@ -23,14 +23,14 @@ const Navbar = () => {
   return (
     <header className="page-header">
       <img
-        src="/images/logo.png"
+        src="/public/logo.png"
         alt="This is page's logo"
         className="page-logo"
       />
       <button className="menu-btn" onClick={toggleMenu}>
         {isOpen ? (
           <img
-            src="/images/icon-hamburger.svg"
+            src="/src/images/icon-hamburger.svg"
             alt="Open menu button"
             className="open-menu"
           />
