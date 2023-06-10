@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import logo from "/src/images/logo.png";
+import openMenu from "/src/images/icon-hamburger.svg";
+import closeMenu from "/src/images/icon-close.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,24 +25,12 @@ const Navbar = () => {
 
   return (
     <header className="page-header">
-      <img
-        src="/src/images/logo.png"
-        alt="This is page's logo"
-        className="page-logo"
-      />
+      <img src={logo} alt="This is page's logo" className="page-logo" />
       <button className="menu-btn" onClick={toggleMenu}>
         {isOpen ? (
-          <img
-            src="/src/images/icon-hamburger.svg"
-            alt="Open menu button"
-            className="open-menu"
-          />
+          <img src={openMenu} alt="Open menu button" className="open-menu" />
         ) : (
-          <img
-            src="/src/images/icon-close.svg"
-            alt="Close menu button"
-            className="close-menu"
-          />
+          <img src={closeMenu} alt="Close menu button" className="close-menu" />
         )}
       </button>
       {windowWidth > 969 || !isOpen ? (
